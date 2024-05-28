@@ -10,14 +10,18 @@ export default function LoginScreen({}) {
   const [password, setPassword] = useState("");
   const [loading, setLoading] = useState(false);
   const navigation = useNavigation();
+  const isLoggedIn = pb.authStore.isValid;
   const handleLogin = async () => {
     setLoading(true);
+    console.log(isLoggedIn);
     try {
       console.log("email", password);
       await pb.collection("users").authWithPassword(email, password);
-      navigation.navigate("Home");
     } catch (error) {
       Alert.alert("Error", error.message);
+    }
+    if (isLoggedIn) {
+      navigation.navigate("Home");
     }
 
     setLoading(false);
