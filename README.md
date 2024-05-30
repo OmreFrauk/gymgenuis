@@ -15,6 +15,7 @@ Clone the repository:
 **Navigate into the project directory:**
 
 >`cd gymgenius`
+
 **Install the dependencies:**
 
 `yarn`
