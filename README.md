@@ -9,16 +9,22 @@ You need to have Node.js and npm installed on your machine. If you don't have th
 
 **Installing**
 Clone the repository:
+
 `git clone https://github.com/OmreFrauk/gymgenuis.git`
 
 **Navigate into the project directory:**
+
 >`cd gymgenius`
 **Install the dependencies:**
+
 `yarn`
+
 **Running the Application**
 
 To start the application, run the following command in your terminal:
+
 >`npm run ios`
+
 This will start the development server. You can now open the application in your web browser or on your mobile device using the Expo app.
 
 **Built With**
