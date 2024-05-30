@@ -33,6 +33,7 @@ const StackNavigator = () => {
           name="Workout"
           component={WorkoutScreen}
           options={{ headerShown: false }}
+          icon="workout"
         />
         <Stack.Screen
           name="Fit"
